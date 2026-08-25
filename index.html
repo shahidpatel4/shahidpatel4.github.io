@@ -259,9 +259,10 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 0.95fr 1.15fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 30px;
       align-items: center;
+      max-width: 1180px;
     }
 
     .eyebrow {
@@ -325,7 +326,10 @@
     }
 
     .diagram-panel {
-      padding: 8px;
+      width: 100%;
+      max-width: 420px;
+      justify-self: end;
+      padding: 7px;
       min-width: 0;
     }
 
@@ -368,9 +372,14 @@
 
     .summary-panel p {
       color: var(--bp-ink-dim);
-      line-height: 1.75;
-      font-size: 15.5px;
-      max-width: 80ch;
+      line-height: 1.78;
+      font-size: 16px;
+      max-width: 92ch;
+      margin: 0;
+    }
+
+    .summary-panel p + p {
+      margin-top: 16px;
     }
 
     /* skills */
@@ -506,6 +515,14 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+
+    .proj-card.card-link:hover {
+      transform: translateY(-4px);
+      border-color: var(--bp-accent);
+      background: rgba(57, 255, 136, .055);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
     }
 
     .proj-card .dwgno {
@@ -723,6 +740,11 @@
         grid-template-columns: 1fr;
       }
 
+      .diagram-panel {
+        max-width: 520px;
+        justify-self: center;
+      }
+
       .two-col {
         grid-template-columns: 1fr;
       }
@@ -905,7 +927,7 @@
         <div>
           <div class="eyebrow">Available for DevOps roles</div>
           <h1 class="title">DevOps Engineer with<br>experience in
-            <span>CI/CD</span>,<br><span>Kubernetes</span>,<span>SonarQube</span>,<span>Docker</span> &amp; Git.
+            <span>CI/CD</span>,<br><span>Kubernetes</span>, <span>SonarQube</span>,<br><span>Docker</span> &amp; Git.
           </h1>
           <p class="lede">I build and maintain automated delivery pipelines — from Git commit through CI/CD, code
             quality checks in SonarQube, to deployment on Kubernetes.</p>
@@ -1020,12 +1042,18 @@
           <h2>Professional Summary</h2>
         </div>
         <div class="dwg summary-panel">
-          <p>DevOps Engineer with hands-on experience designing hybrid cloud architectures, Azure networking solutions,
-            and CI/CD automation workflows. Skilled in Azure Virtual Networks, Site-to-Site VPN, IPsec tunnels, VPN
-            Gateway, RRAS, NSGs, routing, and cloud infrastructure automation. Experienced deploying containerized
-            applications using Docker, Kubernetes (AKS), Azure DevOps Pipelines, and Azure Container Registry. Strong
-            background in Linux administration, Infrastructure-as-Code, monitoring, and troubleshooting enterprise cloud
-            environments.</p>
+          <p>DevOps Engineer with hands-on experience across Kubernetes, Docker, Git, CI/CD automation, Azure cloud
+            services, and networking. Through multiple practical DevOps and cloud projects, I have built and managed
+            automated CI/CD pipelines, containerized applications with Docker, deployed and managed workloads on
+            Kubernetes (AKS), worked with Azure Container Registry, and used Git and GitHub for source control and
+            collaboration.</p>
+          <p>I have also worked extensively with Azure networking, including VNets, subnets, NSGs, routing, VNet peering,
+            Site-to-Site VPNs, VPN Gateway, and hybrid cloud connectivity. During these projects I encountered deployment,
+            container, Kubernetes, pipeline, networking, DNS, routing, and configuration errors, investigated the root
+            causes, and resolved them through troubleshooting, logs, validation, rollback, and configuration fixes. My
+            experience has given me a practical understanding of the complete DevOps workflow—from code changes and Git
+            commits through build, testing, containerization, deployment, monitoring, troubleshooting, and continuous
+            improvement.</p>
         </div>
       </div>
     </section>
@@ -1128,7 +1156,7 @@
         </div>
         <div class="proj-grid">
 
-          <a class="dwg proj-card card-link" style="border-color:#39ff88;"
+          <a class="dwg proj-card card-link"
             href="https://github.com/shahidpatel4/dockerized-cicd-azure-devops-aks"
             target="_blank" rel="noopener"
             aria-label="Open Dockerized CI/CD Pipeline with Azure DevOps and AKS project on GitHub">
