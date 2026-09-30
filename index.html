@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahid Patel — AWS & Azure Cloud Network Engineer</title>
+  <title>Shahid Patel — Systems Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
@@ -259,7 +259,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1fr;
       gap: 30px;
       align-items: center;
       max-width: 1180px;
@@ -905,7 +905,7 @@
     <div class="nav-inner">
       <div class="brand">
         <span class="name">Shahid Patel</span>
-        <span class="role">AWS & Azure Cloud Network Engineer</span>
+        <span class="role">Systems Developer</span>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
       <nav class="links" id="navLinks">
@@ -925,11 +925,11 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">AWS · Azure · Cloud Networking · DevOps</div>
-          <h1 class="title">Cloud Network Engineer with <span>AWS</span> &amp; <span>Azure</span> experience in<br>
-            <span>Terraform</span>, <span>Cloud Networking</span>, <span>CI/CD</span> &amp; Automation.
+          <div class="eyebrow">Systems Development · Testing · Data &amp; AI · Cloud</div>
+          <h1 class="title">Systems Developer building <span>well-tested</span>,<br>
+            <span>scientific</span> &amp; <span>cloud</span> systems.
           </h1>
-          <p class="lede">I design, support, and automate cloud infrastructure across AWS and Azure, with hands-on experience in cloud networking, Infrastructure as Code, CI/CD, monitoring, security, and Python/PowerShell automation.</p>
+          <p class="lede">I provide systems analysis, programming, testing and technical support across the full SDLC, from requirements and design to unit, system and user acceptance testing, deployment and documentation. Master of Applied Computer Science (Software Engineering), with hands-on work in Python, C#/.NET, APIs, machine learning, DevOps and Microsoft Azure/AWS.</p>
           <div class="loc-row">
             <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
                 <path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z" />
@@ -947,73 +947,6 @@
           </div>
         </div>
 
-        <div class="dwg diagram-panel">
-          <div class="sheet-label"><span class="dot"></span>CI/CD Pipeline: Docker → AKS<span
-              class="fill"></span></div>
-          <svg id="netdiagram" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="gridpat" width="18" height="18" patternUnits="userSpaceOnUse">
-                <path d="M18 0H0V18" fill="none" stroke="rgba(110,255,160,0.10)" stroke-width="1" />
-              </pattern>
-              <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
-                orient="auto-start-reverse">
-                <path d="M0,0 L10,5 L0,10 z" fill="#2e6b45" />
-              </marker>
-            </defs>
-            <rect x="0" y="0" width="600" height="300" fill="url(#gridpat)" />
-
-            <!-- stage nodes -->
-            <!-- 1 Git push -->
-            <rect x="14" y="120" width="96" height="60" rx="2" fill="none" stroke="#7fcf9a" stroke-width="1.5" />
-            <text x="62" y="145" text-anchor="middle" fill="#dbffe6" font-family="IBM Plex Mono" font-size="10"
-              font-weight="600">GIT PUSH</text>
-            <text x="62" y="160" text-anchor="middle" fill="#7fcf9a" font-family="IBM Plex Mono" font-size="8">Node.js
-              app</text>
-
-            <!-- 2 Azure DevOps build -->
-            <rect x="140" y="90" width="100" height="60" rx="2" fill="none" stroke="#7fcf9a" stroke-width="1.5" />
-            <text x="190" y="115" text-anchor="middle" fill="#dbffe6" font-family="IBM Plex Mono" font-size="10"
-              font-weight="600">BUILD</text>
-            <text x="190" y="130" text-anchor="middle" fill="#7fcf9a" font-family="IBM Plex Mono" font-size="8">Azure
-              Pipelines</text>
-
-            <!-- 3 Docker image / test -->
-            <rect x="270" y="150" width="100" height="60" rx="2" fill="none" stroke="#7fcf9a" stroke-width="1.5" />
-            <text x="320" y="175" text-anchor="middle" fill="#dbffe6" font-family="IBM Plex Mono" font-size="10"
-              font-weight="600">TEST</text>
-            <text x="320" y="190" text-anchor="middle" fill="#7fcf9a" font-family="IBM Plex Mono" font-size="8">Docker
-              image</text>
-
-            <!-- 4 ACR -->
-            <rect x="400" y="90" width="100" height="60" rx="2" fill="none" stroke="#7fcf9a" stroke-width="1.5" />
-            <text x="450" y="115" text-anchor="middle" fill="#dbffe6" font-family="IBM Plex Mono" font-size="10"
-              font-weight="600">PUSH</text>
-            <text x="450" y="130" text-anchor="middle" fill="#9dffb8" font-family="IBM Plex Mono" font-size="8">Azure
-              Container Registry</text>
-
-            <!-- 5 AKS deploy -->
-            <rect x="490" y="180" width="98" height="72" rx="2" fill="none" stroke="#39ff88" stroke-width="1.6" />
-            <text x="539" y="205" text-anchor="middle" fill="#dbffe6" font-family="IBM Plex Mono" font-size="10"
-              font-weight="600">DEPLOY</text>
-            <text x="539" y="219" text-anchor="middle" fill="#39ff88" font-family="IBM Plex Mono" font-size="8">AKS
-              cluster</text>
-            <text x="539" y="233" text-anchor="middle" fill="#7fcf9a" font-family="IBM Plex Mono"
-              font-size="7.5">rollout / rollback</text>
-
-            <!-- connecting path -->
-            <path d="M110,150 L140,140 M240,120 L270,160 M370,180 L400,150 M500,130 L560,180" fill="none"
-              stroke="#2e6b45" stroke-width="1.4" marker-end="url(#arrowhead)" />
-
-            <text x="300" y="270" text-anchor="middle" fill="#9dffb8" font-family="IBM Plex Mono" font-size="9"
-              letter-spacing="1">AZURE DEVOPS · DOCKER · KUBERNETES · ACR</text>
-
-            <!-- moving packet along full pipeline -->
-            <circle id="packet" r="4.5" fill="#39ff88">
-              <animateMotion dur="4s" repeatCount="indefinite"
-                path="M62,150 L190,120 L320,180 L450,120 L539,216 L539,216" />
-            </circle>
-          </svg>
-        </div>
       </div>
 
       <div class="wrap" style="margin-top:16px;">
@@ -1041,8 +974,9 @@
           <h2>Professional Summary</h2>
         </div>
         <div class="dwg summary-panel">
-          <p>AWS &amp; Azure Cloud Network Engineer with industrial hands-on experience designing, supporting, and automating cloud infrastructure across multi-cloud environments using AWS and Azure.</p>
-          <p>Strong exposure to AWS services including EC2, VPC, Subnets, Security Groups, IAM, S3, CloudWatch, Route 53, Elastic Load Balancing, EKS, and Terraform-based provisioning, along with Azure VNets, NSGs, UDRs, Firewall, NAT, Private Link, VPN Gateway, Azure DevOps, GitHub Actions, and Python/PowerShell automation.</p>
+          <p>Systems Developer with a Master of Applied Computer Science (Software Engineering) and industry experience providing systems analysis, programming, testing and technical support in the development and implementation of new and revised systems across Microsoft Azure and AWS.</p>
+          <p>Skilled across the systems development life cycle (SDLC): reviewing requirements, object-oriented design, API and Web Services development, unit, system and user acceptance testing, and preparing technical design specifications and systems documentation. Delivered 40% faster provisioning and a deployment success rate above 98%.</p>
+          <p>Machine learning research on medical imaging and clinical data taught me to value scientific methodology, validation and accuracy, the same standards that matter in laboratory and forensic information systems.</p>
         </div>
       </div>
     </section>
@@ -1055,45 +989,45 @@
         </div>
         <div class="skills-grid">
           <div class="dwg skill-card">
-            <h3>AWS Cloud Services</h3>
+            <h3>Systems Development</h3>
             <div class="tag-row">
-              <span class="tag">EC2</span><span class="tag">VPC</span><span class="tag">Subnets</span><span class="tag">Security Groups</span><span class="tag">IAM</span><span class="tag">S3</span><span class="tag">CloudWatch</span><span class="tag">Route 53</span><span class="tag">Elastic Load Balancing</span><span class="tag">EKS</span>
+              <span class="tag">SDLC</span><span class="tag">Systems Analysis &amp; Design</span><span class="tag">Requirements Review</span><span class="tag">Object-Oriented Design</span><span class="tag">REST APIs</span><span class="tag">Web Services</span><span class="tag">API Design</span>
             </div>
           </div>
           <div class="dwg skill-card">
-            <h3>Azure Networking</h3>
+            <h3>Programming &amp; Data</h3>
             <div class="tag-row">
-              <span class="tag">VNets</span><span class="tag">NSGs</span><span class="tag">UDRs</span><span class="tag">Firewall</span><span class="tag">NAT</span><span class="tag">Private Link</span>
+              <span class="tag">Python</span><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">PowerShell</span><span class="tag">Flask</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span>
             </div>
           </div>
           <div class="dwg skill-card">
-            <h3>Hybrid Connectivity</h3>
+            <h3>Testing &amp; Quality</h3>
             <div class="tag-row">
-              <span class="tag">ExpressRoute</span><span class="tag">VPN Gateways</span><span class="tag">BGP</span>
+              <span class="tag">Unit Testing</span><span class="tag">System Testing</span><span class="tag">User Acceptance Testing</span><span class="tag">Scenario Testing</span><span class="tag">Test Automation</span><span class="tag">Rollback Testing</span>
             </div>
           </div>
           <div class="dwg skill-card">
-            <h3>Infrastructure as Code</h3>
+            <h3>Data, AI &amp; Emerging Tech</h3>
             <div class="tag-row">
-              <span class="tag">Terraform</span><span class="tag">Bicep</span><span class="tag">ARM Templates</span>
+              <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">AutoML</span><span class="tag">Data Analysis</span><span class="tag">IoT</span><span class="tag">Enterprise Content Management</span><span class="tag">SharePoint</span>
             </div>
           </div>
           <div class="dwg skill-card">
-            <h3>CI/CD &amp; Containers</h3>
+            <h3>DevOps &amp; Open Source</h3>
             <div class="tag-row">
-              <span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">Azure DevOps</span><span class="tag">Docker</span><span class="tag">GitHub</span><span class="tag">GitLab</span>
+              <span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">Azure DevOps</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">Bicep</span>
             </div>
           </div>
           <div class="dwg skill-card">
-            <h3>Identity &amp; Governance</h3>
+            <h3>Cloud &amp; Infrastructure</h3>
             <div class="tag-row">
-              <span class="tag">Azure AD / Entra ID</span><span class="tag">RBAC</span><span class="tag">Managed Identities</span><span class="tag">Policies</span>
+              <span class="tag">Microsoft Azure</span><span class="tag">AWS</span><span class="tag">Linux</span><span class="tag">Windows Server</span><span class="tag">VNets &amp; NSGs</span><span class="tag">VPN Gateway</span><span class="tag">IAM / RBAC</span><span class="tag">CloudWatch</span>
             </div>
           </div>
           <div class="dwg skill-card">
-            <h3>Automation &amp; Operations</h3>
+            <h3>Professional</h3>
             <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">PowerShell</span><span class="tag">CloudWatch</span><span class="tag">Agile/Scrum</span>
+              <span class="tag">Technical Documentation</span><span class="tag">Agile/Scrum</span><span class="tag">Client Collaboration</span><span class="tag">Problem Solving</span>
             </div>
           </div>
         </div>
@@ -1109,19 +1043,19 @@
         <div class="dwg exp-panel">
           <div class="exp-head">
             <div>
-              <h3>Azure Cloud &amp; Network Infrastructure Engineer</h3>
+              <h3>System Developer</h3>
               <div class="company">Teknovator Solutions</div>
             </div>
-            <div class="when">APR 2023 — AUG 2024 · 1 YEAR</div>
+            <div class="when">SEP 2023 — AUG 2024 · 1 YEAR</div>
           </div>
           <ul>
-            <li>Designed and supported multi-cloud infrastructure across AWS and Azure, including AWS VPC, EC2, Security Groups, IAM, S3, CloudWatch and Azure VNets, NSGs, UDRs, Firewall, NAT Gateway, and Private Endpoints — improving cloud security, network segmentation, and operational reliability.</li>
-            <li>Configured AWS VPC networking with public/private subnets, route tables, internet gateways, security groups, and EC2 instances, while also supporting Azure VNet and NSG-based network architecture — enabling secure communication between application and infrastructure components.</li>
-            <li>Designed and maintained Terraform IaC deployments for reproducible, policy-compliant AWS infrastructure — cutting provisioning time by 40% and eliminating manual ClickOps across all environments.</li>
-            <li>Built CI/CD pipelines using GitHub Actions and Jenkins achieving 98%+ deployment success rate with automated build-test-deploy cycles and same-day hotfix capability.</li>
-            <li>Developed Python and PowerShell automation scripts for resource lifecycle management and compliance reporting — reducing manual operational overhead by 30%.</li>
-            <li>Enforced cloud governance and access control using AWS IAM, Azure RBAC, Managed Identities, and Azure Policies — supporting secure access management, compliance, and cost-optimization initiatives.</li>
-            <li>Configured monitoring and observability using AWS CloudWatch and Log Analytics with dashboards and threshold-based alerts — improving incident visibility and reducing Mean Time to Detect network issues by 35%.</li>
+            <li>Provided systems analysis, programming, testing and technical support in the development and implementation of new and revised systems, applications and automation across Microsoft Azure and AWS.</li>
+            <li>Designed and developed programming tasks using industry-standard programming languages (Python, PowerShell, Terraform) and operating systems (Linux, Windows), reducing manual operational effort by 30%.</li>
+            <li>Performed unit, system and scenario testing through automated build-test-deploy CI/CD pipelines in GitHub Actions and Jenkins, and supported user acceptance testing, achieving a deployment success rate above 98%.</li>
+            <li>Reviewed systems and software requirements and produced technical design specifications for multi-cloud architecture across AWS (VPC, EC2, S3) and Azure (VNets, NSGs, Firewall, Private Endpoints).</li>
+            <li>Evaluated design alternatives and recommended hardware and software configuration, development standards and costs, implemented as reusable Terraform Infrastructure as Code, cutting provisioning time by 40%.</li>
+            <li>Recognized and resolved operational and process problems with CloudWatch and Log Analytics dashboards and alerts, reducing mean time to detect issues by 35%.</li>
+            <li>Collaborated across teams in Agile/Scrum, explained analysis and recommendations to clients and stakeholders, and prepared systems documentation, manuals and reports.</li>
           </ul>
         </div>
       </div>
@@ -1135,28 +1069,49 @@
         </div>
         <div class="proj-grid">
 
-          <a class="dwg proj-card card-link"
-            href="https://github.com/shahidpatel4/hybrid-cloud-azure-vpn"
-            target="_blank" rel="noopener"
-            aria-label="Open Azure Network and Load Balancing Platform project on GitHub">
-            <div class="dwgno" style="color:#39ff88;">TERRAFORM / AZURE VNET / LOAD BALANCER / APP GATEWAY WAF V2</div>
-            <h3>Azure Network &amp; Load Balancing Platform</h3>
+          <div class="dwg proj-card">
+            <div class="dwgno">PYTHON / DEEP LEARNING / AUTOML</div>
+            <h3>X-ray Abnormality Detection</h3>
             <ul>
-              <li>Architected multi-tier Azure network topology with VNets, NSGs, UDRs, Private Endpoints, and NAT Gateway — implementing L4/L7 load balancing with health probes, backend pools, and SSL offloading for zero-downtime blue-green deployments.</li>
-              <li>Automated all infrastructure using Terraform IaC — achieving fully reproducible, policy-compliant deployments with 100% configuration drift elimination and Azure Monitor observability for proactive incident detection.</li>
+              <li>Developed a machine learning model to detect abnormalities in musculoskeletal X-ray images, reaching about 79% accuracy with ensemble methods.</li>
+              <li>Evaluated an autoencoder-based anomaly detection alternative (AUC about 0.50) and documented the results and recommendations.</li>
+            </ul>
+          </div>
+          <div class="dwg proj-card">
+            <div class="dwgno">PYTHON / AUTOML / ENSEMBLE METHODS</div>
+            <h3>Cerebral Stroke Prediction</h3>
+            <ul>
+              <li>Built a classification model on tabular clinical data using AutoML, ensemble methods and feature optimization, improving predictive performance over single models.</li>
+            </ul>
+          </div>
+          <div class="dwg proj-card">
+            <div class="dwgno">ALGORITHMS / RESEARCH PAPER</div>
+            <h3>Ride-Sharing Navigation System</h3>
+            <ul>
+              <li>Designed and compared Greedy Best-First Search, A* and Ant Colony Optimization route-planning algorithms and documented the analysis in a research paper.</li>
+            </ul>
+          </div>
+          <a class="dwg proj-card card-link" href="https://github.com/shahidpatel4/azure-webapp-appservice-storage" target="_blank" rel="noopener" aria-label="Open Flask Web Application on Azure project on GitHub">
+            <div class="dwgno">PYTHON / FLASK / AZURE APP SERVICE</div>
+            <h3>Flask Web Application on Azure</h3>
+            <ul>
+              <li>Developed and deployed a Flask web application on Azure App Service, integrating Azure Blob Storage for uploads and Azure Files for shared configuration.</li>
             </ul>
             <div class="link-hint">View project on GitHub ↗</div>
           </a>
-
-          <a class="dwg proj-card card-link"
-            href="https://github.com/shahidpatel4/dockerized-cicd-azure-devops-aks"
-            target="_blank" rel="noopener"
-            aria-label="Open CI/CD Infrastructure Automation Platform project on GitHub">
-            <div class="dwgno">AWS EKS / GITHUB ACTIONS / DOCKER / PYTHON</div>
-            <h3>CI/CD Infrastructure Automation Platform</h3>
+          <a class="dwg proj-card card-link" href="https://github.com/shahidpatel4/dockerized-cicd-azure-devops-aks" target="_blank" rel="noopener" aria-label="Open CI/CD Pipeline to Kubernetes project on GitHub">
+            <div class="dwgno">AZURE DEVOPS / DOCKER / AKS</div>
+            <h3>CI/CD Pipeline to Kubernetes</h3>
             <ul>
-              <li>Implemented Infrastructure as Code using Terraform on AWS EKS — enforcing consistent, auditable configurations with zero manual ClickOps and 98%+ deployment success rate via GitHub Actions CI/CD pipelines.</li>
-              <li>Developed Python automation scripts for resource lifecycle management and compliance reporting — reducing manual infrastructure overhead by 60% and enabling proactive capacity management.</li>
+              <li>End-to-end pipeline automating build, test and deployment of a containerized Node.js app to Azure Kubernetes Service via Azure Container Registry, with rollout and rollback testing.</li>
+            </ul>
+            <div class="link-hint">View project on GitHub ↗</div>
+          </a>
+          <a class="dwg proj-card card-link" href="https://github.com/shahidpatel4/hybrid-cloud-azure-vpn" target="_blank" rel="noopener" aria-label="Open Hybrid Cloud Site-to-Site VPN project on GitHub">
+            <div class="dwgno">AZURE VPN GATEWAY / WINDOWS SERVER</div>
+            <h3>Hybrid Cloud Site-to-Site VPN</h3>
+            <ul>
+              <li>Connected a simulated on-premises Windows Server (RRAS) network to an Azure VNet through a site-to-site IPsec VPN and tested connectivity.</li>
             </ul>
             <div class="link-hint">View project on GitHub ↗</div>
           </a>
@@ -1225,7 +1180,7 @@
               aria-label="View Microsoft Certified Azure Administrator Associate credential">
               <span class="badge"></span>
               <div>
-                <div class="ctext">Microsoft Certified: Azure Administrator Associate — AZ-400 (Active)</div>
+                <div class="ctext">Microsoft Certified: Azure Administrator Associate — AZ-104 (Active)</div>
                 <div class="csub">Microsoft</div>
                 <div class="link-hint">View Microsoft credential ↗</div>
               </div>
@@ -1256,8 +1211,8 @@
     <div class="wrap contact-grid">
       <div>
         <div class="eyebrow">Contact</div>
-        <h2>Let's route a connection.</h2>
-        <p>Open to Cloud Engineering, DevOps, SRE, and Infrastructure opportunities involving AWS, Azure, Terraform, cloud networking, CI/CD, automation, monitoring, and secure cloud operations. Reach out directly or drop a line by email.</p>
+        <h2>Let's build something reliable.</h2>
+        <p>Open to Systems Developer, Software Developer, Systems Analyst, and Cloud/DevOps opportunities, including scientific, healthcare and public sector systems. Reach out directly or drop a line by email.</p>
         <div class="btn-row">
           <button class="btn primary" id="footerEmailBtn" type="button">Send an Email</button>
           <a class="btn" href="tel:+19023382146">Call +1 (902) 338-2146</a>
